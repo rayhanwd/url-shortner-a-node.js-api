@@ -11,8 +11,7 @@ const createSortUrl = async (data) => {
 const getOrignalUrl = async (shortId) => {
   const url = await Url.findOne({ shortId: shortId });
   return url;
-
-};
+}
 
 module.exports = {
   createSortUrl,
